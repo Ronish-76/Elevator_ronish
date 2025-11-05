@@ -36,7 +36,7 @@ namespace Elevator_A1
             EnsureActionLogGrid();
             LoadLogsFromDatabase();
 
-            SetState("Idle");
+            SetStateText("Idle");
             // Ensure controls are enabled initially
             SetControlsEnabled(true);
         }

@@ -5,7 +5,7 @@ namespace Elevator_A1
 {
     public partial class Form1 : Form
     {
-        private Floor CurrentFloor => (pictureElevator.Top >= (_elevatorTopGround + _elevatorTopFirst) / 2) ? Floor.Ground : Floor.First;
+
 
         private string GetDisplayText()
         {
@@ -44,10 +44,6 @@ namespace Elevator_A1
             this.Text = $"Elevator - {GetDisplayText()}";
         }
 
-        private void SetState(string state)
-        {
-            _stateText = state;
-            UpdateDisplay();
-        }
+
     }
 }
